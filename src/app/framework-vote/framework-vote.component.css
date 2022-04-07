@@ -1,0 +1,5 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+.disabled {
+    pointer-events: none;
+    cursor: default;
+  }

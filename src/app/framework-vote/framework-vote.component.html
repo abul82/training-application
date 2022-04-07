@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="card text-center">
+    <div class="card-body">
+
+      <div class="alert alert-primary" role="alert">
+        <h4>
+          <strong>{{title}}</strong>
+        </h4>
+      </div>
+
+      <img [src]="logo">
+
+      <h3>Vote Here</h3>
+      <div class="row">
+        <button type="button" class="offset-md-4 col-md-2 btn btn-success" (click)="vote('like')">Yes</button>
+        <button type="button" class="col-md-2 btn btn-danger" (click)="vote('dislike')">No</button>
+      </div>
+
+      
+      <div class="row" style="margin-top: 10px;text-align: center;">
+
+        <a class="col-md-6 btn btn-warning disabled" href="#"  role="button">Like Count : {{likeCount}}</a>
+        <a class="col-md-6 btn btn-warning disabled" href="#"  role="button">Dislike Count : {{dislikeCount}}</a>
+        <!-- <a class="col-md-4 btn  btn-warning disabled" href="#" role="button"></a>
+        <a class="col-md-4 btn  btn-warning disabled" href="#" role="button">Best Angular Articles</a> -->
+
+      </div>
+    </div>
+  </div>
+</div>

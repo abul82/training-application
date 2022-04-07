@@ -1,0 +1,21 @@
+
+<h3>2.a</h3>
+<input type="text" [(ngModel)]="reverseString" name="reverseString">
+
+<p>Reversed String: {{reverseString | reverse}}</p>
+
+
+<h3>2.b</h3>
+<button (click)="sort()">Sort Array</button>
+<div *ngFor="let item of trainingArray">
+    <p> {{item.trainingName}}</p>
+</div>
+
+
+<h3>2.c</h3>
+<a class="col-md-6 btn btn-warning disabled" role="button" (click)="callPromise()">Click Me to get from Promise</a>
+<p *ngIf="!(promiseString|async)">From Promise: loading...</p>
+<p *ngIf="(promiseString|async)"> From Promise: {{promiseString | async}}</p>
+
+
+

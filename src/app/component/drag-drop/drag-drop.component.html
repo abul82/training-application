@@ -1,0 +1,5 @@
+<h2>Drag-Drop</h2>
+<p>There are 15 Indian Cricket Players here and Feel free to Arrang them by Drag and Drop</p>
+<div class="container" cdkDropList (cdkDropListDropped)="onDrop($event)">
+    <div class="box" *ngFor="let item of items" cdkDrag>{{item}}</div>
+  </div>
